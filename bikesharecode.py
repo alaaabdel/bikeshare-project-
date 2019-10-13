@@ -29,7 +29,7 @@ def get_filters():
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
         try:
-            city = CITY_DATA[str(input('\nWould you like to see data for Chicago, New York City, or Washington?\n').lower())]
+            city = CITY_DATA[str(input('\nWould you like to see the data for Chicago, New York City, or Washington?\n').lower())]
         #return city 
             break
         except KeyError:
@@ -37,7 +37,7 @@ def get_filters():
         
     while True:
         try:
-            month = month_list.index(str(input('\nInsert month (from January to june) to filter by  or all\n').lower().title()))
+            month = month_list.index(str(input('\nInsert month (from January to june) to filter by or all\n').lower().title()))
         #return month
             break
         except ValueError:
